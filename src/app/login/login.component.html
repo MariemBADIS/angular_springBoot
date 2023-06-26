@@ -1,0 +1,11 @@
+<div *ngIf="invalidLogin">Invalid credentials</div>
+
+<div>
+
+    user Name : <input type="text" name="username" [(ngModel)]="username">
+    Password : <input type="password" name="password" [(ngModel)]="password">
+
+    User Name : {{username}}
+
+    <button (click)="login()">Login</button>
+</div>
